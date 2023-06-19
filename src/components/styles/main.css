@@ -1,0 +1,36 @@
+body {
+  background-color: #f8f8f8;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  padding: 15px;
+  width: 250px;
+  border: 1.5px solid #e6e6e6;
+  border-radius: 5%;
+  font-weight: 500;
+}
+.counter__btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.counter__btn-decrement, .counter__btn-increment {
+  border-style: solid;
+  border-radius: 20%;
+  color: white;
+  font-weight: 400;
+}
+.counter__btn-decrement {
+  background-color: #ec3755;
+  border-color: #ec3755;
+}
+.counter__btn-increment {
+  background-color: #3049d8;
+  border-color: #3049d8;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,49 @@
+$primary-color: #f8f8f8;
+$secondary-color: #e6e6e6;
+$negative-color: #ec3755;
+$positive-color: #3049d8;
+
+body {
+  background-color: $primary-color;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+
+  padding: 15px;
+  width: 250px;
+
+  border: 1.5px solid $secondary-color;
+  border-radius: 5%;
+
+  font-weight: 500;
+
+    &__btn{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 7px;
+
+      &-decrement, &-increment {
+        border-style: solid;
+        border-radius: 20%;
+
+        color: white;
+
+        font-weight: 400;
+      }
+
+      &-decrement{
+        background-color: $negative-color;
+        border-color: $negative-color;
+      }
+
+      &-increment{
+        background-color: $positive-color;
+        border-color: $positive-color;
+      }
+    }
+}
